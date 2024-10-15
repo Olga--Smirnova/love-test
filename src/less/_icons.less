@@ -1,0 +1,24 @@
+
+.icon {
+    width: 24px;
+    height: 24px;
+    --primary-icon-color: #pallet[text];
+
+    &:hover,
+    &:active,
+    &:focus {
+        &, svg path {
+            --primary-icon-color: #pallet[primary];
+        }
+    }
+}
+
+.icon-lg {
+    width: 22px;
+    height: 22px;
+
+    @media (min-width: 992px) {
+        width: 34px;
+        height: 34px;
+    }
+}

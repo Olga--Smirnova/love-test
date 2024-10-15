@@ -1,0 +1,25 @@
+    <div class="card">
+        <div class="card-photo" style="background-image: url({{member.photo ? member.photo : '/assets/images/placeholder.svg'}});" title="{{ member.name }}"></div>
+
+        <div class="card-over-photo-info">
+            <span class="badge rounded-pill text-bg-light t-light">
+                <svg class="icon icon-lg" viewBox="0 0 22 22"> 
+                    <use xlink:href="#distance-icon" x="0" y="0" />
+                </svg>
+                <span class="pe-2 ps-lg-1">~500 km</span>
+            </span>
+        </div>
+
+        <div class="card-info">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="card-info-text">
+                    <span>{{ member.name }}, {{ member.age }}</span>
+                </div>
+                <div [ngClass]="member.status  ? 'card-info-status' : 'card-info-status error '"></div>
+            </div>
+            
+            <span class="flex-grow-1 t-grey d-block mt-lg-1">{{ member.city }}</span>
+        </div>
+    </div>
+
+
