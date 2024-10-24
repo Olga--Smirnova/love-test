@@ -3,6 +3,8 @@
     border: 1px solid #pallet[light-grey];
     border-radius: 17px;
     margin-bottom: 17px;
+    position: relative;
+    overflow: hidden;
 
     @media (min-width: 992px) {
         font-size: 18px;
@@ -23,16 +25,21 @@
 }
 
 .card-photo {
-    width: auto;
-    height: 158px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    border-top-left-radius: 17px;
-    border-top-right-radius: 17px;
+    padding-top: 132%;
+    background: #pallet[placeholder];
 
-    @media (min-width: 576px) {
-        height: 253px;
+    img {
+        display: block;
+        height: auto;
+        left: 0;
+        max-width: 100%;
+        position: absolute;
+        top: 0;
+        touch-action: pan-y;
+        -ms-touch-action: pan-y;
+        width: 100%;
+        -webkit-touch-callout: none;
+        user-select: none;
     }
 }
 
@@ -67,15 +74,15 @@
 
 .card-over-photo-info {
     position: absolute;
-    top: calc(158px - 30px);
+    bottom: 70px;
     left: 12px;
 
     @media (min-width: 576px) {
-        top: 72%;
         left: 14px;
     }
 
     @media (min-width: 992px) {
-        top: 59%;
+        bottom: 110px;
     }
+    
 }
