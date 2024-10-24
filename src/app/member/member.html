@@ -1,5 +1,7 @@
     <div class="card">
-        <div class="card-photo" style="background-image: url({{member.photo ? member.photo : '/assets/images/placeholder.svg'}});" title="{{ member.name }}"></div>
+        <div class="card-photo">
+            <img src="{{member.photo ? member.photo : '/assets/images/placeholder.svg'}}" alt="{{ member.name }}" />
+        </div>
 
         <div class="card-over-photo-info">
             <span class="badge rounded-pill text-bg-light t-light">

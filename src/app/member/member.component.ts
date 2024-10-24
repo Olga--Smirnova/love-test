@@ -30,7 +30,7 @@ export class MemberComponent {
             age: 25,
             city: 'Пермь',
             radius: 500,
-            photo: `${this.baseUrl}/olga25.jpg`,
+            photo: '',
             status: true
         },
         {
